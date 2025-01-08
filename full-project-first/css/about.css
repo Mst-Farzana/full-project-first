@@ -1,0 +1,290 @@
+:root {
+  --default-font: 'Roboto', system-ui, -apple-system, 'Segoe UI', Roboto,
+    'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', sans-serif,
+    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  --heading-font: 'Raleway', sans-serif;
+  --nav-font: 'Poppins', sans-serif;
+}
+:root {
+  --background-color: #ffffff;
+  --default-color: #444444;
+  --heading-color: #222222;
+  --accent-color: #34b7a7;
+  --surface-color: #ffffff;
+  --contrast-color: #ffffff;
+}
+:root {
+  scroll-behavior: smooth;
+}
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  color: black;
+}
+body {
+  color: var(--default-color);
+  background-color: var(--background-color);
+  font-family: var(--default-font);
+}
+
+.nav-main-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px;
+}
+.nav-menu-item ul {
+  display: flex;
+}
+.nav-menu-item ul li {
+  display: flex;
+  position: relative;
+  margin-right: 10px;
+}
+
+.nav-menu-item ul li a {
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.nav-menu-item ul li a:hover {
+  color: color-mix(in srgb, var(--accent-color), transparent 25%);
+  text-decoration: underline;
+  color: var(--accent-color);
+  vertical-align: bottom;
+  text-underline-offset: 10px;
+  text-decoration: underlinevar(--accent-color);
+  cursor: pointer;
+}
+.nav-menu-item ul li a:focus {
+  text-decoration: underline;
+  color: var(--accent-color);
+  vertical-align: bottom;
+  text-underline-offset: 10px;
+  text-decoration: underlinevar(--accent-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--heading-color);
+  font-family: var(--heading-font);
+}
+.header {
+  color: var(--default-color);
+  background-color: var(--background-color);
+  padding: 15px 0;
+  transition: all 0.5s;
+  z-index: 997;
+  box-shadow: 0px 0 18px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0px;
+  left: 0px;
+  font-size: 15px;
+}
+
+.header .header-social-links {
+  padding-right: 15px;
+}
+
+.header-social-links .btn {
+  display: inline-block;
+  transition: 0.3s;
+  font-size: 20px;
+  border: none;
+}
+.header-social-links .btn i {
+  background-color: white;
+  padding: 5px;
+}
+
+.header .header-social-links .btn :hover {
+  color: var(--accent-color);
+  padding: 5px;
+}
+.about-section-title {
+  text-align: center;
+  color: #34b7a7;
+  margin: 20px;
+}
+.about-section-title h2 {
+  border-bottom: 3px var(--accent-color) solid;
+  display: inline;
+  padding: 2px;
+  margin: 10px;
+  font-size: 1.5rem;
+}
+.about-section-title p {
+  margin: 15px;
+}
+.about-main {
+  display: flex;
+}
+.about-img {
+  padding: 25px;
+  margin-left: 30px;
+}
+.about-main-right {
+  margin: 20px;
+  margin-left: 0px;
+}
+.main-right-middle {
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
+}
+.about-main-right-left {
+  flex: 0.5;
+}
+.about-main-right-right {
+  flex: 0.5;
+}
+.about-main-right i {
+  color: #34b7a7;
+  margin-right: 5px;
+  font-size: 1.5rem;
+}
+.about-main-right li {
+  margin-top: 10px;
+}
+
+.about-main-right ul {
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+.about-main-right p {
+  margin-top: 20px;
+  font-size: 20px;
+  text-align: justify;
+  font-family: sans-serif;
+}
+.Skills-Item {
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
+  padding: 15px;
+}
+.skills-content-left {
+  flex: 0.5;
+  margin: 10px;
+  padding: 5px;
+}
+.skills-content-right {
+  flex: 0.5;
+  margin: 10px;
+  padding: 5px;
+}
+
+.Skills-Item li {
+  position: relative;
+  margin: 40px 0px;
+  flex: 0.5;
+}
+.val {
+  text-align: right;
+}
+.skills-content-left li::before {
+  content: '';
+  position: absolute;
+  background-color: rgb(170, 167, 173);
+  width: 100%;
+  height: 15px;
+  margin-top: 30px;
+}
+.skills-content-right li::before {
+  content: '';
+  position: absolute;
+  background-color: rgb(170, 167, 173);
+  width: 100%;
+  height: 15px;
+  margin-top: 30px;
+}
+.skills-content-left li::after {
+  content: '';
+  position: absolute;
+  background-color: rgb(170, 167, 173);
+  width: 0;
+  height: 15px;
+  margin-top: 30px;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+.skills-content-right li::after {
+  content: '';
+  position: absolute;
+  background-color: rgb(170, 167, 173);
+  width: 0;
+  height: 15px;
+  margin-top: 30px;
+  animation-duration: 3s;
+  animation-timing-function: ease;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
+.skills-content-left li.html::after {
+  animation-name: html;
+  background-color: aquamarine;
+}
+@keyframes html {
+  to {
+    width: 100%;
+  }
+}
+.skills-content-left li.css::after {
+  animation-name: css;
+  background-color: aquamarine;
+}
+@keyframes css {
+  to {
+    width: 90%;
+  }
+}
+.skills-content-left li.javascript::after {
+  animation-name: javascript;
+  background-color: aquamarine;
+}
+@keyframes javascript {
+  to {
+    width: 75%;
+  }
+}
+.skills-content-right li.php::after {
+  animation-name: php;
+  background-color: aquamarine;
+}
+@keyframes php {
+  to {
+    width: 80%;
+  }
+}
+.skills-content-right li.wordpress::after {
+  animation-name: wordpress;
+  background-color: aquamarine;
+}
+@keyframes wordpress {
+  to {
+    width: 90%;
+  }
+}
+.skills-content-right li.photoshop::after {
+  animation-name: photoshop;
+  background-color: aquamarine;
+}
+@keyframes photoshop {
+  to {
+    width: 55%;
+  }
+}
+.list-item {
+  display: flex;
+  justify-content: space-between;
+}
