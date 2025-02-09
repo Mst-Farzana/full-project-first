@@ -37,21 +37,13 @@ body {
 }
 .nav-menu-item ul {
   display: flex;
-  position: relative;
 }
 .nav-menu-item ul li {
   display: flex;
+  position: relative;
   margin-right: 10px;
 }
-.nav-menu-item ul ul {
-  position: absolute;
-  margin-top: 12px;
-  display: inline;
-}
-.nav-menu-item ul ul li {
-  display: none;
-  margin-top: 10px;
-}
+
 .nav-menu-item ul li a {
   text-decoration: none;
   transition: 0.3s;
@@ -85,7 +77,7 @@ h6 {
 }
 .header {
   color: var(--default-color);
-  background-color: var(--background-color);
+  background-color: #e9e8e6;
   padding: 15px 0;
   transition: all 0.5s;
   z-index: 997;
@@ -107,7 +99,7 @@ h6 {
   border: none;
 }
 .header-social-links .btn i {
-  background-color: white;
+  background-color: #e9e8e6;
   padding: 5px;
 }
 
@@ -115,44 +107,86 @@ h6 {
   color: var(--accent-color);
   padding: 5px;
 }
-#hero {
-  position: relative;
-}
-#hero img {
-  width: 100%;
-  height: 50%;
-}
-.hero-text-area {
-  position: absolute;
+/*header end*/
+/*main start*/
+
+.container-section-title {
+  margin: 30px auto;
   text-align: center;
-  top: 50%;
-  left: 30%;
 }
-.hero-text-area h2 {
-  font-size: 40px;
+.container-section-title h2 p {
+  margin: 25px auto;
+  padding: 10px;
+  text-align: center;
 }
-.hero-text-area p {
-  font-size: 30px;
+.hr-line hr {
+  border-bottom: 4px var(--accent-color) solid;
+  border-top: none;
+  height: 1px;
+  width: 50px;
+  margin: 10px auto;
+}
+.container {
+  display: flex;
+  margin: 30px;
+  padding: 20px;
+}
+.left-site {
   margin-top: 20px;
-  margin-bottom: 20px;
+  padding-left: 10px;
+  width: 50%;
 }
-.hero-text-area a {
-  background-color: var(--accent-color);
-  padding: 10px 35px;
-  border-radius: 25px;
+.left-site h3 {
+  margin-top: 20px;
+  padding-left: 10px;
 }
-.hero-text-area a:hover {
-  background-color: #38d3c5;
+
+.border-circle i {
+  color: var(--accent-color);
 }
+.resume-item-style {
+  border-left: #34b7a7 2px solid;
+  margin-left: 7px;
+  margin-top: -2px;
+  padding: 15px;
+  margin-bottom: -12px;
+}
+.header-style {
+  display: inline-block;
+  margin-top: 10px;
+}
+.resume-item-style li {
+  list-style: circle;
+  list-style-position: inside;
+  color: #222222;
+}
+.resume-item-style p {
+  margin: 10px;
+  line-break: normal;
+}
+
+/*right site*/
+.right-site {
+  margin: 5px;
+  width: 50%;
+}
+.right-site h3 {
+  margin-top: 20px;
+  padding-left: 10px;
+}
+/*main end*/
+
+/*footer start*/
 #footer {
   text-align: center;
   padding: 25px;
+  background: #e9e8e6;
 }
 #footer .social-links i {
   font-size: 20px;
   margin: 10px;
   padding: 15px;
-  background: white;
+  background: #e9e8e6;
   box-sizing: border-box;
   border: grey 1px solid;
   border-radius: 100px;
@@ -161,3 +195,4 @@ h6 {
   color: var(--accent-color);
   border: var(--accent-color) 1px solid;
 }
+/*footer end*/
